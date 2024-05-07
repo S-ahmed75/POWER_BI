@@ -1,6 +1,7 @@
 # OBJECTIVE
 
 ✅Total sales
+![TOTAL SALES AND PROFIT](https://github.com/S-ahmed75/DATA_ANALYST/assets/41890981/7043670f-64f8-40ff-ba08-986e78c037f8)
 
 ✅Total sales per product
 
