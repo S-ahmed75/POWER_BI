@@ -32,8 +32,6 @@
 
 ![AVERAGE SALE OVER DISCOUNT](https://github.com/S-ahmed75/DATA_ANALYST/assets/41890981/b7a6e031-22cc-44ca-82dd-017ece0cc86d)
 
-✅Which customer segments contribute the most to overall sales, and how do they compare to one another?
-
 ✅How does order item discount affect both sales per order and profit per order? 
 
 ![SALES OVER DISCOUNT](https://github.com/S-ahmed75/DATA_ANALYST/assets/41890981/e53c848e-bb7a-4241-bbad-182194381582)
@@ -46,3 +44,39 @@
 ✅Are there any customer regions or countries that stand out in terms of sales or profit performance?
 
 ![TOTAL SALE BY REGION](https://github.com/S-ahmed75/DATA_ANALYST/assets/41890981/a3891ea0-c9bc-4168-afa4-e60c4a94b68c)
+
+Data Cleaning and Data Processing
+•	The data was in 12 CSVs and directly loaded to POWER BI
+•	I deleted duplicate columns containing same order ids.
+•	Converted the revenue column as dollar exchange.
+•	Extracted the duration of shipment as days.
+•	Extracted the minimum and maximum days of shipment.
+•	Created new formula for distribution of sales.
+•	Extracted names of days, months, quarter number.
+NOTE:
+I did not delete rows with nulls, I only filtered them out. After the model was transformed and loaded. I sorted the date via different columns to study the data patterns. I discovered that some of the ride durations were negative so we filtered those ones out.
+Insights and Recommendations
+ Insights
+•  Sales Performance: The company has sold a total of $2.29 million in the past month, which is a significant increase from the previous month.
+ 
+•  Profit: The total profit for the throughout period is $286.40k. 
+
+•  Top Selling Segments: Consumer and Home Office are the top-selling segments, accounting for 50.70 million and 30.67 million respectively, out of the total sales of $2.29 million. 
+•  Top Selling Products: Canon Copier Machine and Electric Punch Binding Machine are the top-selling products. 
+•  Sales Trend: The sales trend appears to be positive, but it is stay low or nothing in third quarter whereas there much demanding in fourth quarter.
+
+Specific Recommendations
+•	The casual consumer has more than half of total sales which can be targeted to achieve more sales.
+•	On shipment mode Standard class is more acceptable by end user rather than other mode. We need to improve delivery standards on this category.
+•	Smaller product which has no impact on sales can be removed.
+General Recommendations
+•	In general marketing efforts should be focused June and December as that are the end of corporate year for most of the companies.
+•	We can start maintenance services charges for high price product like copier machine, video conferring unit, and so on.
+•	North America appears to be the strongest performing region. We can decrease marketing budget in this region and invest others to boost sales in all.
+•	We can discuss over reducing the maximum time of delivery for better client satisfaction.
+Major Learnings
+•	Some operations are O(n^2), so we need to delay these steps till after the data model is ready. For e.g. Sorting and Deleting rows with blanks, nulls etc. Meaning that once the index has been assigned to rows it is a compute-heavy task to delete unwanted rows and then refresh the index for every row deleted.
+•	Documenting the steps of your work is more important than doing the work once and forgetting what you did the last time.
+
+
+
