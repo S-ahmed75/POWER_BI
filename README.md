@@ -117,7 +117,9 @@ I did not delete rows with nulls, I only filtered them out. After the model was 
 •	North America appears to be the strongest performing region. We can decrease marketing budget in this region and invest others to boost sales in all.
 
 •	We can discuss over reducing the maximum time of delivery for better client satisfaction.
-Major Learnings
+
+
+# Major Learnings
 
 •	Some operations are O(n^2), so we need to delay these steps till after the data model is ready. For e.g. Sorting and Deleting rows with blanks, nulls etc. Meaning that once the index has been assigned to rows it is a compute-heavy task to delete unwanted rows and then refresh the index for every row deleted.
 
